@@ -1,3 +1,4 @@
+"use strict";
 let BtnSighUp = document.querySelector('#body__button').addEventListener('click', BtnSighUpFUNC);
 let ConfirmPasswordInput = document.querySelector('#password2').addEventListener('input', _compairePassword);
 
