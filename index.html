@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="/style.css">
+   <title>Form</title>
+</head>
+
+<body>
+   <div class="container body-container">
+      <img src="/img/icon.png" alt="logo">
+      <h1>Sing Up With email</h1>
+      <div class="body__gender">
+         <h2>Gender</h2>
+         <div class="body__gender_container">
+            <input type="radio" name="radio" id="radio-1">
+            <label for="radio-1">
+               <div class="body__gender_item body__gender_male">
+                  <img src="/img/male.png" alt="male"><br>
+                  Male
+               </div>
+            </label>
+            <input type="radio" name="radio" id="radio-2">
+            <label for="radio-2">
+               <div class="body__gender_item body__gender_female">
+                  <img src="/img/female.png" alt="female"><br>
+                  Female
+               </div>
+            </label>
+            <input type="radio" name="radio" id="radio-3">
+            <label for='radio-3'>
+               <div class="body__gender_item body__gender_other">
+                  <img src="/img/other.png" alt="other" checked><br>
+                  Other
+               </div>
+            </label>
+         </div>
+      </div>
+      <div class="body__input-field ">
+         <h2>E-mail</h2>
+         <input type="email" name="" class='body__input mail' id="email" placeholder="user@mail.com">
+         <div class='mail-error-message'>Введите корректный e-mail</div>
+      </div>
+      <div class="body__input-field">
+         <h2>Create Password</h2>
+         <input type="password" name="" class='body__input password' id="password1">
+         <div class='password-button' id="password1-button"><img src="/img/eye.png" alt=""></div>
+      </div>
+      <div class="body__input-field">
+         <h2>Confirm Password</h2>
+         <input type="password" name="" class='body__input password' id="password2">
+         <div class='password-button' id="password2-button"><img src="/img/eye.png" alt=""></div>
+         <div class='password-error-message'>Пароли не совпадают</div>
+      </div>
+      <button id="body__button">Sign Up</button>
+      <p class="body__footer-text_1">Already have an account? <a href="#">Log in</a></p>
+      <p class="body__footer-text_2">Review privacy and disclosures <a href="#">here</a></p>
+   </div>
+</body>
+<script src="/script.js"></script>
+
+</html>

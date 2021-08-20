@@ -1,0 +1,301 @@
+@charset "UTF-8";
+/* ------------------------------------------font-family----------------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+/* ------------------------------------------zeroing style---------------------------------------*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+/*убирает крест в поле ввода в Enternet exployer*/
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/* ------------------------------------------main style----------------------------------------*/
+.container {
+  margin: 20px auto;
+  border-radius: 16px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: aqua;
+  text-align: center;
+  font-family: 'Montserrat';
+}
+
+.container h1 {
+  margin-top: 21px;
+}
+
+.container .body__input {
+  border-radius: 16px;
+  border: 1px solid #C1C1C1;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  color: #5B5B5B;
+}
+
+.container .body__input:focus {
+  border: 1px solid #87D78B;
+}
+
+.container #body__button {
+  background: #3C9C41;
+  border-radius: 16px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+.container #body__button:hover {
+  background: #4DB252;
+}
+
+.container p {
+  font-family: 'Montserrat';
+}
+
+.container p a {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  font-weight: bold;
+  color: #3C9C41;
+}
+
+.container .body__input-field {
+  margin-top: 20px;
+  position: relative;
+}
+
+.container .body__input-field .password-button {
+  position: absolute;
+}
+
+.container .body__input-field .mail-error-message, .container .body__input-field .password-error-message {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  text-align: left;
+  margin-top: 12px;
+  color: #D23737;
+}
+
+.body__gender {
+  margin-top: 24px;
+}
+
+.body__gender_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.body__gender_container input[type=radio] {
+  display: none;
+}
+
+.body__gender_container input[type=radio]:checked + label {
+  color: #3C9C41;
+  border: 1px solid #3C9C41;
+  border-radius: 16px;
+}
+
+.body__gender_container .body__gender_item {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  border: 1px solid #C1C1C1;
+  border-radius: 16px;
+}
+
+.body__gender_container .body__gender_male img {
+  width: 32px;
+  height: 32px;
+}
+
+.body__gender_container .body__gender_female img {
+  width: 19.38px;
+  height: 32px;
+}
+
+.body__gender_container .body__gender_other img {
+  width: 28.12px;
+  height: 32px;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29.26px;
+  color: #5B5B5B;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: 700;
+  text-align: left;
+  line-height: 29.94px;
+  color: #5B5B5B;
+}
+
+/* ------------------------------------------@media------------------------------------------*/
+@media (max-width: 767px) {
+  .container {
+    width: 340px;
+    padding: 25px 16px 18px 16px;
+  }
+  .container .body__input {
+    width: 308px;
+    height: 50px;
+    padding: 19px 18px 11px 18px;
+    font-size: 16px;
+    line-height: 19.5px;
+  }
+  .container #body__button {
+    width: 308px;
+    height: 50px;
+    font-size: 16px;
+    line-height: 19.5px;
+    margin-top: 20px;
+  }
+  .container p {
+    font-size: 14px;
+    line-height: 17.07px;
+  }
+  .container .body__input-field .password-button {
+    margin-top: -39px;
+    margin-left: 264.94px;
+  }
+  .body__footer-text_1, .body__footer-text_2 {
+    margin-top: 16px;
+  }
+  .body__gender_item {
+    width: 90px;
+    height: 80px;
+    font-size: 16px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    line-height: 19.5px;
+    border: 1px solid #C1C1C1;
+    border-radius: 16px;
+    padding: 10px;
+  }
+  input[type=radio]:checked + label {
+    width: 90px;
+    height: 80px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 570px;
+    padding: 29px 35px 35px 35px;
+  }
+  .container .body__input {
+    width: 500px;
+    height: 70px;
+    padding: 28px 25px 20px 25px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .container #body__button {
+    width: 500px;
+    height: 70px;
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 30px;
+  }
+  .container p {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .container .body__input-field .password-button {
+    margin-top: -50px;
+    margin-left: 447.94px;
+  }
+  .body__footer-text_1 {
+    margin-top: 30px;
+  }
+  .body__footer-text_2 {
+    margin-top: 20px;
+  }
+  .body__gender_item {
+    width: 156px;
+    height: 100px;
+    font-size: 18px;
+    line-height: 21.94px;
+    padding: 20px;
+  }
+  .body__gender_container input[type=radio]:checked + label {
+    width: 156px;
+    height: 100px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
